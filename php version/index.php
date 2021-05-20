@@ -23,7 +23,7 @@ require_once __DIR__ . '/database.php';
 
     </header>
 
-    <main class="main">
+    <main>
         <section class="vetrina ">
 
              <?php foreach ($database as $value) {?>
