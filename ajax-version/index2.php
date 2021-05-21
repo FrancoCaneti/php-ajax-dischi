@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <!--Vue-->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="http://localhost:8888/php-ajax-dischi/ajax-version/album.php"></script>
 </head>
 <body>
 <div id="app">
@@ -18,15 +18,13 @@
     </header>
     <main>
         <section class="vetrina ">
-        
-                    <div class="copertina" v-for='disco in dischi'>    
-                    <img class='img-copertina' :src="disco.poster" :alt="disco.title">
-                        <h3>{{disco.title}} </h3>
-                        <p>{{disco.author}} </p>
-                        <p> {{disco.year}}</p>
-                        <p>{{disco.genre}} </p>
-                    </div>
-              
+                <div class="copertina" v-for='album in albums'>    
+                    <img class='img-copertina' :src="album.poster" :alt="album.title">
+                        <h3>{{album.title}} </h3>
+                        <p>{{album.author}} </p>
+                        <p> {{album.year}}</p>
+                        <p>{{album.genre}} </p>
+                </div>
         </section>
     </main>
 
