@@ -5,9 +5,10 @@ const app = new Vue({
     },
     created() {
         axios
-            .get('http://localhost:8888/php-ajax-dischi/ajax-version/index2.php')
+            .get('http://localhost:8888/php-ajax-dischi/ajax-version/album.php')
             .then(result => {
                 this.albums = result.data;
+                console.log(result.data)
             })
             .catch(err => {
 

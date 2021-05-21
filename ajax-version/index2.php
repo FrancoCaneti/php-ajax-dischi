@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <!--Vue-->
-    <script src="http://localhost:8888/php-ajax-dischi/ajax-version/album.php"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
 <div id="app">
@@ -31,7 +31,7 @@
 
 </div>
   <!--js--> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./script.js"></script> 
 </body>
 </html>
