@@ -30,9 +30,9 @@ require_once __DIR__ . '/database.php';
                     <div class="copertina">
                         <img class='img-copertina' src= <?php echo $value['poster'] ?> alt="">
                         <h3> <?php echo $value["title"]; ?></h3>
-                        <p class=" f13"> <?php echo $value["author"]; ?></p>
+                        <p> <?php echo $value["author"]; ?></p>
                         <p> <?php echo $value["year"]; ?></p>
-                        <p class=" f13"> <?php echo $value["genre"]; ?></p>
+                        <p> <?php echo $value["genre"]; ?></p>
 
                     </div>
                <?php }?>

@@ -18,14 +18,15 @@
     </header>
     <main>
         <section class="vetrina ">
-
-           
-                    <div class="copertina">
-                        
-
+        
+                    <div class="copertina" v-for='disco in dischi'>    
+                    <img class='img-copertina' :src="disco.poster" :alt="disco.title">
+                        <h3>{{disco.title}} </h3>
+                        <p>{{disco.author}} </p>
+                        <p> {{disco.year}}</p>
+                        <p>{{disco.genre}} </p>
                     </div>
-               
-
+              
         </section>
     </main>
 
